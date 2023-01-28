@@ -3,13 +3,24 @@ public class Ascii {
     // TODO: Methode implementieren
     public static String intToBinarystring(int symbolAsInt) {
         String binaryString = "";
+        int currentInt = symbolAsInt;
 
+        while (currentInt > 0) {
 
+            if (currentInt % 2 == 0) {
+                binaryString = "0" + binaryString;
+            } else {
+                binaryString = "1" + binaryString;
+            }
 
+            currentInt = currentInt / 2;
+        }
 
+        int missingBits = 7 - binaryString.length();
 
-
-
+        for (int i = 0; i < missingBits; i++) {
+            binaryString = "0" + binaryString;
+        }
 
         return binaryString;
     }
@@ -17,12 +28,12 @@ public class Ascii {
     // TODO: Methode implementieren
     public static int binarystringToInt(String binaryString) {
         int currentInt = 0;
-
-
-
-
-
-
+        for (int i = 0; i < binaryString.length(); i++) {
+            currentInt = currentInt * 2;
+            if (binaryString.charAt(i) == '1') {
+                currentInt = currentInt + 1;
+            }
+        }
 
         return currentInt;
     }

@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String stringBefore = "10010001100001110110011011001101111010000010100001100101111010011001011110010";
+        String stringBefore = "100100011000011101100110110011011110100000101000010001011110100110010111100100100001";
         String stringAfter;
         MODE mode = MODE.DECODE;
 

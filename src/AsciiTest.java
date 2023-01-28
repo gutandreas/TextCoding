@@ -3,8 +3,8 @@ import junit.framework.TestCase;
 public class AsciiTest extends TestCase {
 
     public void testBinaryStringToInt() {
-        int intResult1 = Ascii.binaryStringToInt("1000001");
-        int intResult2 = Ascii.binaryStringToInt("1111111");
+        int intResult1 = Ascii.binarystringToInt("1000001");
+        int intResult2 = Ascii.binarystringToInt("1111111");
         assert intResult1 == 65;
         assert intResult2 == 127;
     }
