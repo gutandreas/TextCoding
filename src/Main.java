@@ -2,9 +2,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String stringBefore = "100100011000011101100110110011011110100000101000010001011110100110010111100100100001";
+        String stringBefore = "Guten Tag!";
         String stringAfter;
-        MODE mode = MODE.DECODE;
+        MODE mode = MODE.ENCODE;
 
         if (mode == MODE.ENCODE){
             stringAfter = Ascii.textToBinaryString(stringBefore);
