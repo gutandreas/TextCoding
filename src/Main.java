@@ -7,10 +7,10 @@ public class Main {
         MODE mode = MODE.ENCODE;
 
         if (mode == MODE.ENCODE){
-            stringAfter = Ascii.textToBinaryString(stringBefore);
+            stringAfter = Ascii.textToBinarystring(stringBefore);
         }
         else {
-            stringAfter = Ascii.binaryStringToText(stringBefore);
+            stringAfter = Ascii.binarystringToText(stringBefore);
         }
 
         System.out.println(stringAfter);

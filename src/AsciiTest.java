@@ -9,10 +9,10 @@ public class AsciiTest extends TestCase {
         assert intResult2 == 127;
     }
 
-    public void testBinaryStringToText() {
-        String stringResult1 = Ascii.binaryStringToText("1000001");
-        String stringResult2 = Ascii.binaryStringToText("1100001");
-        assert stringResult1.equals("A");
-        assert stringResult2.equals("a");
+    public void testIntToBinarystring() {
+        String stringResult1 = Ascii.intToBinarystring(65);
+        String stringResult2 = Ascii.intToBinarystring(5);
+        assert stringResult1.equals("1000001");
+        assert stringResult2.equals("0000101");
     }
 }

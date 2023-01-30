@@ -7,10 +7,6 @@ public class Ascii {
 
 
 
-
-
-
-
         return binaryString;
     }
 
@@ -21,13 +17,10 @@ public class Ascii {
 
 
 
-
-
-
         return currentInt;
     }
 
-    public static String textToBinaryString(String text) {
+    public static String textToBinarystring(String text) {
         String binaryString = "";
         for (int i = 0; i < text.length(); i++) {
             char currentChar = text.charAt(i);
@@ -36,7 +29,7 @@ public class Ascii {
         return binaryString;
     }
 
-    public static String binaryStringToText(String binaryString) {
+    public static String binarystringToText(String binaryString) {
         String text = "";
         if (binaryString.length() % 7 != 0) {
             System.out.println("Fehler: Der eingegebene binäre String enthält eine ungültige Anzahl Zeichen!");
